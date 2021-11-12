@@ -32,7 +32,11 @@ pipeline {
 
 
    }
-cleanWs()
+post {
+        always {
+            cleanWs()
+        }
+    }
 }
 
 
