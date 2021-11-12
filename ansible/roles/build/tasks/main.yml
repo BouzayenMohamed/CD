@@ -1,6 +1,16 @@
 ---
 # Project Build playbook_dir 
+                 - name: print npm -version to stdout
+                   command: npm -version
+                   register: npm
 
+                 - debug: msg="{{ npm.stdout }}"
+
+                 - name: print node -version to stdout
+                   command: node --version
+                   register: node
+
+                 - debug: msg="{{ node.stdout }}"
                  - name : build app
                    shell :
                       chdir: "{{playbook_dir}}/.."
