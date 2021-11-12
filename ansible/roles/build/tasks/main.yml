@@ -1,0 +1,4 @@
+---
+# Project Build
+                 - name : build app
+                   shell : ng build --prod
