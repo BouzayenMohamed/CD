@@ -5,7 +5,6 @@ localhost
 
 [Server:vars]
 ansible_python_interpreter= /usr/bin/python3
-ansi_user= linux2
-ansible_user=bouzayen
+ansible_ssh_user=bouzayen 
 ansible_ssh_pass=toor
 
