@@ -42,7 +42,7 @@ post {
         always {
             cleanWs()
         }
-    }g
+    }
 }
 
 
